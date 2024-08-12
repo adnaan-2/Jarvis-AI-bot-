@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: #dee8f7;
+    color: #151414;
+    padding: 10px;
+}
+
+main {
+    margin-top: 50px;
+}
+
+button {
+    margin: 5px;
+}
+
+.box {
+    border: #333 solid;
+    border-width: 4px 8px;
+    margin: 100px 100px;
+    border-radius: 10px;
+    font-size: 120px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(142, 120, 218, 0.2);
+    font-family: 'Times New Roman', Times, serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.send {
+    margin: 3px 30px;
+    padding: 10px;
+    font-size: 2rem;
+    background-color: #486bce;
+}
+
+
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-theme .box {
+    background-color: #444;
+    color: #fff;
+    border: #486bce solid;
+}
+
+.dark-theme #task-input {
+    background-color: #444;
+    border: #486bce solid;
+    color: #fff;
+}
+
+
+.dark-theme header {
+    background-color: #222;
+    color: #f8f9fa;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.icon-button:focus {
+    outline: none;
+}
+
+span {
+    border: #486bce solid;
+    background-color: #486bce;
+    color: white;
+    border-radius: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 7px 20px;
+}

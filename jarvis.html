@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="jarvis.css">
+</head>
+<body>
+
+    <div class="offcanvas offcanvas-start" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+                <li>Account</li>
+                <li>Setting</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ul>
+        </div>
+    </div>
+    <header class="d-flex justify-content-between align-items-center">
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+            <i class="fa-solid fa-2xl fa-bars" style="color: #486bce"></i>
+        </button>
+        <h1>Jarvis AI <span>JI</span></h1>
+        
+        <div class="header-icons">
+            <button class="icon-button" id="theme-toggle-button" onclick="toggleTheme()">
+                <i class="fa-solid fa-2xl fa-lightbulb"></i>
+            </button>
+            <button class="icon-button" id="user-icon">
+                <i class="fa-solid fa-2xl fa-user-large" style="color: #486bce"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="box">
+        <h1>Let call the future Gen AI...</h1>
+        <h2>Powered by Jarvis Iron Man</h2>
+    </div>
+
+    <main class="container mt-5">
+        <section class="text-center">
+            <div id="response-container" class="p-3 border rounded"></div>
+            <div class="input-group my-3 mt-5">
+                <button class="btn btn-secondary mx-2" id="start-voice"><i class="fa-solid fa-2xl fa-microphone"></i></button>
+                <input type="text" id="task-input" class="form-control" placeholder="Ask anything from Jarvis...">
+                <button class="btn btn-primary  mx-2" id="submit-text"><i class="fa-solid fa-2xl fa-paper-plane "></i></button>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="jarvis.js"></script>
+</body>
+</html>
